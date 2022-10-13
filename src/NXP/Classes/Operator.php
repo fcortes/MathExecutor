@@ -18,7 +18,7 @@ class Operator
      */
     public $function;
 
-    public int $places = 0;
+    public $places = 0;
 
     /**
      * Operator constructor.

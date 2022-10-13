@@ -21,22 +21,22 @@ use SplStack;
 class Tokenizer
 {
     /** @var array<Token> */
-    public array $tokens = [];
+    public $tokens = [];
 
-    private string $input = '';
+    private $input = '';
 
-    private string $numberBuffer = '';
+    private $numberBuffer = '';
 
-    private string $stringBuffer = '';
+    private $stringBuffer = '';
 
-    private bool $allowNegative = true;
+    private $allowNegative = true;
 
     /** @var array<Operator> */
-    private array $operators = [];
+    private $operators = [];
 
-    private bool $inSingleQuotedString = false;
+    private $inSingleQuotedString = false;
 
-    private bool $inDoubleQuotedString = false;
+    private $inDoubleQuotedString = false;
 
     /**
      * Tokenizer constructor.

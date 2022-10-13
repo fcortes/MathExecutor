@@ -8,18 +8,18 @@ use ReflectionFunction;
 
 class CustomFunction
 {
-    public string $name = '';
+    public $name = '';
 
     /**
      * @var callable $function
      */
     public $function;
 
-    private bool $isVariadic;
+    private $isVariadic;
 
-    private int $totalParamCount;
+    private $totalParamCount;
 
-    private int $requiredParamCount;
+    private $requiredParamCount;
 
     /**
      * CustomFunction constructor.

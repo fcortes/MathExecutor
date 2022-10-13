@@ -7,11 +7,11 @@ use ReflectionFunction;
 
 class Operator
 {
-    public string $operator = '';
+    public $operator = '';
 
-    public bool $isRightAssoc = false;
+    public $isRightAssoc = false;
 
-    public int $priority = 0;
+    public $priority = 0;
 
     /**
      * @var callable(\SplStack)
